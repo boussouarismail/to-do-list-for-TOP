@@ -1,0 +1,150 @@
+:root{
+height: 100%;
+}
+
+body{
+    color: blueviolet;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px dashed yellow;
+}
+
+.main{
+    height: 75%;
+    width: 75%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main > * {
+    padding: 2 em;
+}
+
+header{
+    padding: 1em 10em 1em 10em;
+    font-size: xx-large;
+}
+
+content{
+    flex: 1 1 0;
+    display: flex;
+}
+
+    .sid-bar{
+        flex: 1 1 0;
+        border: 1px dashed yellowgreen;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+        .project{
+            padding: 1em;
+            background-color: aquamarine;
+            margin: 3px;
+        }
+
+        .project:hover{
+            color: white;
+            background-color: black;
+        }
+
+            #addProject{
+                align-self: center;
+            }
+
+    .container{
+        flex: 5 1 0;
+        border: 1px dashed red;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+
+    }
+        #head{
+            display: flex;
+
+        }
+        #head>div{
+            display: inline-flex;
+            color: yellow;
+            gap: 1em;
+            padding: 2em;
+            border-radius: 40px;
+            background-color: darkblue;
+        }
+
+            #head>div>div{
+                background-color: none;
+            }
+            #head>div:last-child{
+                border-radius: 40px;
+            }
+            #head>div:last-child:hover{
+                background-color: darkcyan;
+                color: aliceblue;
+            }
+            #projectName{
+                flex-grow: 1;
+                display: flex;
+            }
+            #projectName > div:nth-child(1){
+                flex-grow: 1;
+            }
+
+        #todos{
+            padding: 2em;
+        }
+            .todo{
+                margin: 2em;
+                display: flex;
+                gap: 1em;
+                flex: 1 1 1;
+                background-color:aquamarine;
+            }
+
+
+footer{
+    text-align: center;
+}
+
+#newProjectForm{
+    display: none;
+    border: 3px dashed pink;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;   
+    background-color: antiquewhite;
+}
+
+#newProjectForm > *{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    border: 3px dashed red;
+    padding: 3em;
+    
+}
+
+#newProjectForm > *>*:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+#addNewTodo{
+    display: none;
+}
+
+
+

@@ -1,1 +1,71 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>to-do-list-TOP</title><script src="to-do-list.js" defer="defer"></script><link rel="stylesheet" href="style.css"><script defer="defer" src="to-do-list.js"></script></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list-TOP</title>
+    
+<script defer src="to-do-list.js"></script></head>
+<body>
+<div class="main">    
+    <header> 
+        TOP to-do-list
+    </header>
+    <content>
+        
+        <div class="sid-bar">
+            <div ></div>
+            <button id="addProject" > + </button>
+        </div>
+        <div class="container">
+            <div id="head">
+                <div id="projectName" ></div>
+                <div id="addTodo">+</div>
+            </div>
+            <div id="todos">
+
+            </div>
+
+        </div>
+    </content>
+    <footer>
+        copyright 2023 The Odin Project 
+     </footer>
+</div>
+    
+
+    <div id="newProjectForm">
+        <form action="">
+            <div>
+                <label for="title ">project name:</label>
+                <input type="text" id="title" name="title" placeholder="your project title"  >
+            </div>
+
+            <div>
+                <label for="description ">project description:</label>
+                <input type="text" id="description" name="description" placeholder="your project description" >
+            </div>
+
+            <div>
+                <label for="notes ">project nots:</label>
+                <textarea id="notes" rows="1" cols="30" name="notes" > </textarea>
+            </div>
+
+            <div>
+                <label for="date ">project due date: </label>
+                <input type="datetime-local" id="date" name="dueDate" >
+            </div>
+
+            <div>
+                <button id="addNewProject" type="button">add project</button>
+            </div>
+            
+            <div>
+                <button id="addNewTodo" type="button">add todo</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
